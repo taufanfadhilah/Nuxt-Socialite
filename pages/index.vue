@@ -4,7 +4,7 @@
       <div class="col-md-6 offset-md-3 card p-5 mt-5">
         <div v-if="$store.state.user.name" class="text-center">
           <h3>Hello {{ $store.state.user.name }}</h3>
-          <p>Visit me on <a href="">{{$store.state.user.html_url}}</a></p>
+          <p>Visit me on <a :href="$store.state.user.html_url">{{$store.state.user.html_url}}</a></p>
         </div>
         <div v-else>
           <h3>Hi, Plase Login First</h3>
